@@ -3,10 +3,8 @@ package online.bank.revolut.card;
 import java.time.LocalDate;
 
 public class VirtualOneTimeCard extends AbstractCard {
-    String number;
-    int pin;
-    LocalDate expDate;
-    boolean blocked;
+
+    private static final String TYPE = "VIRTUALONETIME";
 
     public VirtualOneTimeCard(String number, int pin, LocalDate expirationDate){
         super(number, pin, expirationDate);
@@ -14,6 +12,6 @@ public class VirtualOneTimeCard extends AbstractCard {
 
     @Override
     public String getType(){
-        return "VIRTUALONETIME";
+        return TYPE;
     }
 }

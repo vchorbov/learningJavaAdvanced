@@ -3,11 +3,8 @@ package online.bank.revolut.card;
 import java.time.LocalDate;
 
 public class PhysicalCard extends AbstractCard {
-    String number;
-    int pin;
-    LocalDate expDate;
-    boolean blocked;
 
+    private static final String TYPE = "PHYSICAL";
 
     public PhysicalCard(String number, int pin, LocalDate expirationDate) {
         super(number, pin, expirationDate);
@@ -15,6 +12,6 @@ public class PhysicalCard extends AbstractCard {
 
     @Override
     public String getType(){
-        return  "PHYSICAL";
+        return TYPE;
     }
 }

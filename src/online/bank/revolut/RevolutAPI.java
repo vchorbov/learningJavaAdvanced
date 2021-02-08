@@ -1,6 +1,7 @@
 package online.bank.revolut;
 
 import online.bank.revolut.account.Account;
+import online.bank.revolut.card.AbstractCard;
 import online.bank.revolut.card.Card;
 
 public interface RevolutAPI {

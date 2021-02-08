@@ -3,11 +3,8 @@ package online.bank.revolut.card;
 import java.time.LocalDate;
 
 public class VirtualPermanentCard extends AbstractCard {
-    String number;
-    int pin;
-    LocalDate expDate;
-    boolean blocked;
 
+    private static final String TYPE = "VIRTUALPERMANENT";
 
     public VirtualPermanentCard( String number, int pin, LocalDate expirationDate){
         super(number, pin, expirationDate);
@@ -15,7 +12,7 @@ public class VirtualPermanentCard extends AbstractCard {
 
     @Override
     public String getType(){
-        return "VIRTUALPERMANENT";
+        return TYPE;
     }
 
 
